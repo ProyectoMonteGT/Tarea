@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200.. 1000&display=intercambiar');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../img/img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 800px;
+}
+.title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(#F2911B, #F2BB16);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+}
+.question {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.question p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.option {
+    padding: 10px;
+    border: 3px solid #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    flex-basis: 45%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.option:hover {
+    background-image: linear-gradient(to right, #0ab321, #2ef307);
+    transform: scale(1.03);
+    border: none;
+}
+
+.option.correct {
+    background-color: #90ee90;
+}
+.option.wrong {
+    background-color: #ffcccb;
+}
+#score-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    background: #444;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    color: #fff;
+}
